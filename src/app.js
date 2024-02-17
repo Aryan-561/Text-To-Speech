@@ -68,7 +68,6 @@ function pauseBtn(boolean){
 //     console.log("Start");
 // }
 speech.onend = (event) => {
-    console.log("End");
     pauseBtn(true);
 }
 

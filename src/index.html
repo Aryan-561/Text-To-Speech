@@ -6,24 +6,24 @@
     <title>Text To Speech</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-slate-900 grid place-items-center gap-y-4 h-screen text-white py-4">
+<body class="bg-slate-900 grid place-items-center gap-y-4 h-screen text-white py-6">
     <div>
         <h1 class="text-3xl font-bold font-mono">Text To Speech</h1>
     </div>
     <div class="w-full ">
-        <textarea class=" min-w-[80%] min-h-96 md:min-h-80 mx-auto p-4   block rounded-xl bg-slate-400 text-slate-950 font-semibold outline-none border-4 border-white bordwer-solid placeholder:text-slate-700" name="input-text" placeholder="Write here..."></textarea>
+        <textarea class=" min-w-[80%] min-h-96 md:min-h-80 mx-auto p-4   block rounded-xl bg-slate-400 text-slate-950 md:font-semibold outline-none border-4 border-slate-400 border-solid placeholder:text-slate-700 focus:border-white" name="input-text" placeholder="Write here..."></textarea>
     </div>
 
     <div class="min-w-[80%] flex flex-col items-center gap-6 my-4">
 
-        <select class="w-[90%] md:w-[75%] h-8 text-center border-2 border-solid hover:bg-slate-700 pl-2 appearance-none  rounded-2xl outline-none bg-slate-500" name="" id=""></select>
+        <select class="w-[90%] md:w-[75%] h-8 text-center border-2 border-solid hover:bg-slate-700 pl-2 appearance-none  rounded-2xl outline-none bg-slate-500 hidden md:block" name="voice" id=""></select>
         
         <div class="flex gap-3">
         <div>   
         <button class="text-lg font-bold w-20 px-2 bg-indigo-900 hover:bg-indigo-600 active:bg-indigo-400 rounded-xl border-2 border-solid border-white" id="to-listen">Listen</button>
         </div>
         <div>
-            <button class="text-lg font-bold w-24 px-2 bg-indigo-900 hover:bg-indigo-600 active:bg-indigo-400 rounded-xl border-2 border-solid border-white disabled:bg-indigo-500" id="pause-resume" disabled>Paused</button>
+            <button class="text-lg font-bold w-24 px-2 bg-indigo-900 hover:bg-indigo-600 active:bg-indigo-400 rounded-xl border-2 border-solid border-white disabled:bg-indigo-500 hidden md:block " id="pause-resume" disabled>Paused</button>
         </div>
        <div>
         <button class="text-lg font-bold w-20 px-2 bg-indigo-900 hover:bg-indigo-600 active:bg-indigo-400 rounded-xl border-2 border-solid border-white" id="to-clear">Clear</button>
