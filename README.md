@@ -1,5 +1,6 @@
 # Text to Speech
 A basic voice synthesizer in vanillaJS with TailwindCSS
+### API: Web Speech API
 >Note: Use large devices for better Experience and some browser that don't support Text to Speech Engine.  
 ## Live Demo
 Text to Speech -[Click Here](https://aryan-561.github.io/Text-To-Speech/src/)
